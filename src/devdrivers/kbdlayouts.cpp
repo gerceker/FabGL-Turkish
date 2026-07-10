@@ -28,10 +28,7 @@
 
 
 
-
  namespace fabgl {
-
-
 
 
 
@@ -377,6 +374,84 @@ const KeyboardLayout GermanLayout {
   },
 };
 
+
+/**************************************************************************************/
+/* TURKISH LAYOUT                                                                      */
+/**************************************************************************************/
+const KeyboardLayout TurkishLayout {
+  // name
+  "TR",
+
+  // desc
+  "Turkish",
+
+  // inherited layout
+  &USLayout,
+
+  {
+    { 0x0E, VK_QUOTEDBL },   // ESC'nin altındaki tuş: Shiftsiz " (Çift Tırnak)
+    { 0x4E, VK_ASTERISK },   // Backspace'in solundaki 1. tuş: Shiftsiz * (Yıldız)
+    { 0x55, VK_MINUS },      // Backspace'in solundaki 2. tuş: Shiftsiz - (Tire)
+    { 0x5D, VK_COMMA },      // Enter'ın sol altındaki tuş (US'de \): Shiftsiz , (Virgül)
+    { 0x4A, VK_PERIOD },     // Sağ shiftin solundaki tuş: Shiftsiz . (Nokta)
+    { 0x61, VK_LESS },       // Sol shiftin sağındaki tuş: Shiftsiz < (Küçüktür)
+    
+
+    { 0x54, VK_g },          // Ğ -> g
+    { 0x5B, VK_u },          // Ü -> u
+    { 0x4C, VK_s },          // Ş -> s
+    { 0x52, VK_i },          // İ -> i
+    { 0x41, VK_o },          // Ö -> o
+    { 0x49, VK_c },          // Ç -> c
+  },
+
+  {
+  },
+
+  {
+    
+    { VK_PERIOD,      { 0, 0, 0, 1 }, VK_COLON },       // Shift + . = : (İki Nokta)
+    { VK_COMMA,       { 0, 0, 0, 1 }, VK_SEMICOLON },   // Shift + , = ; (Noktalı Virgül)
+
+    { VK_u,           { 0, 0, 1, 0 }, VK_TILDE },       // AltGr + Ü tuşu = ~ (Tilde)
+
+    { VK_ASTERISK,    { 0, 0, 0, 1 }, VK_QUESTION },    // Shift + * = ? (Soru İşareti)
+    { VK_ASTERISK,    { 0, 0, 1, 0 }, VK_BACKSLASH },   // AltGr + * = \ (Ters Eğik Çizgi)
+
+    { VK_MINUS,       { 0, 0, 0, 1 }, VK_UNDERSCORE },  // Shift + - = _ (Alt Çizgi)
+
+    { VK_LESS,        { 0, 0, 0, 1 }, VK_GREATER },     // Shift + < = >
+    { VK_LESS,        { 0, 0, 1, 0 }, VK_VERTICALBAR }, // AltGr + < = | (Dikey Çizgi)
+
+    { VK_q,           { 0, 0, 1, 0 }, VK_AT },          // AltGr + Q = @
+
+    { VK_1,           { 0, 0, 0, 1 }, VK_EXCLAIM },     // Shift + 1 = !
+    { VK_2,           { 0, 0, 0, 1 }, VK_QUOTE },       // Shift + 2 = ' (Tek Tırnak)
+    { VK_3,           { 0, 0, 0, 1 }, VK_CARET },       // Shift + 3 = ^
+    { VK_4,           { 0, 0, 0, 1 }, VK_PLUS },        // Shift + 4 = +
+    { VK_5,           { 0, 0, 0, 1 }, VK_PERCENT },     // Shift + 5 = %
+    { VK_6,           { 0, 0, 0, 1 }, VK_AMPERSAND },   // Shift + 6 = &
+    { VK_7,           { 0, 0, 0, 1 }, VK_SLASH },       // Shift + 7 = /
+    { VK_8,           { 0, 0, 0, 1 }, VK_LEFTPAREN },   // Shift + 8 = (
+    { VK_9,           { 0, 0, 0, 1 }, VK_RIGHTPAREN },  // Shift + 9 = )
+    { VK_0,           { 0, 0, 0, 1 }, VK_EQUALS },      // Shift + 0 = =
+
+    { VK_3,           { 0, 0, 1, 0 }, VK_HASH },        // AltGr + 3 = #
+    { VK_4,           { 0, 0, 1, 0 }, VK_DOLLAR },      // AltGr + 4 = $
+    { VK_7,           { 0, 0, 1, 0 }, VK_LEFTBRACE },   // AltGr + 7 = {
+    { VK_8,           { 0, 0, 1, 0 }, VK_LEFTBRACKET }, // AltGr + 8 = [
+    { VK_9,           { 0, 0, 1, 0 }, VK_RIGHTBRACKET },// AltGr + 9 = ]
+    { VK_0,           { 0, 0, 1, 0 }, VK_RIGHTBRACE },  // AltGr + 0 = }
+  },
+
+  // deadkeys
+  {
+  },
+
+  // deadkeys translation
+  {
+  },
+};
 
 /**************************************************************************************/
 /* ITALIAN LAYOUT                                                                     */
